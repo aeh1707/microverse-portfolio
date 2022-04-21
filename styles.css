@@ -37,8 +37,7 @@ h1 {
     font-weight: 700;
     line-height: 60px;
     color: #091E42;
-    margin: 0;
-}
+} 
 
 h1 + p {
     color: #344563;
@@ -74,15 +73,15 @@ h1 + p::first-letter {
 
 .intro {
     background: no-repeat center/100% url('graphics/header-shapes-mobile.png');
-    height: 100vh;
+    min-height: 605px;
 }
 
 .flex-container {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center; */
+    justify-content: center;
     width: 86%;
-    height: 100vh;
+    min-height: 605px;
     margin: 0 auto;
 }
 
