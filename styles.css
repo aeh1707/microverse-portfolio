@@ -2,92 +2,92 @@
 ************************** */
 
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 /* Header Styles
 ************************** */
 
 .logo {
-    font-weight: 700;
-    font-size: 1.15rem;
-    line-height: 20px;
-    color: #6070FF;
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 20px;
+  color: #6070FF;
 }
 
 .burger {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 60px;
-    color: #091E42;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 60px;
+  color: #091E42;
 } 
 
 h1 + p {
-    color: #344563;
-    margin: 0;
+  color: #344563;
+  margin: 0;
 }
 
 .connect {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #7F8CFF;
-    margin-top: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #7F8CFF;
+  margin-top: 16px;
 }
 
 .social {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .social li {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0 15px 0 0;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 15px 0 0;
 }
 
 .navbar,
 .name,
 .glad,
 h1 + p::first-letter {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .intro {
-    background: no-repeat center/100% url('graphics/header-shapes-mobile.png');
+  background: no-repeat center/100% url('graphics/header-shapes-mobile.png');
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 86%;
-    min-height: 160vw;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 86%;
+  min-height: 160vw;
+  margin: 0 auto;
 }
 
 .navbar {
-    width: 86%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 86%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
