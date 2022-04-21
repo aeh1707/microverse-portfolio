@@ -73,7 +73,6 @@ h1 + p::first-letter {
 
 .intro {
     background: no-repeat center/100% url('graphics/header-shapes-mobile.png');
-    min-height: 605px;
 }
 
 .flex-container {
@@ -81,7 +80,7 @@ h1 + p::first-letter {
     flex-direction: column;
     justify-content: center;
     width: 86%;
-    min-height: 605px;
+    min-height: 160vw;
     margin: 0 auto;
 }
 
