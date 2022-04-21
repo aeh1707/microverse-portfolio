@@ -71,3 +71,20 @@ h1 + p {
 h1 + p::first-letter {
     text-transform: capitalize;
 }
+
+.flex-container {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 86%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.navbar {
+    width: 86%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
