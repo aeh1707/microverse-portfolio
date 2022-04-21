@@ -4,7 +4,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -37,7 +40,7 @@ h1 {
   font-weight: 700;
   line-height: 60px;
   color: #091e42;
-} 
+}
 
 h1 + p {
   color: #344563;
