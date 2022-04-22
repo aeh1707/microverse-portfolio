@@ -1,28 +1,53 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio
+# Personal Portfolio
 
-> This is a portfolio website set up for and by web developers.
+> Description the project.
 
+This project is my personal Portifolio on which you my find my recent work and connect to me via my social media platforms.
 
 ## Built With
 
 - HTML
 - CSS
+- Technologies used: LINT, HINT, LINTHOUSE
 
-## Authors
 
-👤 **Author1**
+## Getting Started
 
-- GitHub: [@aeh1707](https://github.com/githubhandle)
-- Twitter: [@aeh1707](https://twitter.com/twitterhandle)
-- LinkedIn: [abdelhadi-hireche](https://linkedin.com/in/linkedinhandle)
+-Clone the project via terminal or download the package.
 
+-Open index.html file via browser
+
+### Prerequisites
+
+1. Should have installed any web browser
+
+### Setup
+
+npx stylelint "**/*.{css,scss}" npx hint ./index.html
+
+### Usage
+
+1. Open index.html located at the route folder of the project
+
+
+
+## Author
+
+👤 **Abdelhadi Hireche**
+
+- GitHub: [aeh1707](https://github.com/aeh1707)
+- Twitter: [aeh1707](https://twitter.com/aeh1707)
+- LinkedIn: [abdelhadi-hireche](https://www.linkedin.com/in/abdelhadi-hireche)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to text via above provided social media handles.
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
