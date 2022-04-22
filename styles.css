@@ -28,6 +28,7 @@ body {
   font-size: 1.15rem;
   line-height: 20px;
   color: #6070ff;
+  text-decoration: none;
 }
 
 .burger {
