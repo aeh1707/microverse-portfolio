@@ -12,12 +12,28 @@ html {
 }
 
 body {
+  background-color: #ebebff;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+}
+
+.navbar,
+.name,
+.glad,
+h1 + p::first-letter,
+h3,
+h4,
+h4 + p::first-letter,
+button {
+  text-transform: capitalize;
+}
+
+header {
+  background-color: white;
 }
 
 /* Header Styles
@@ -74,15 +90,10 @@ h1 + p {
   margin: 0 15px 0 0;
 }
 
-.navbar,
-.name,
-.glad,
-h1 + p::first-letter {
-  text-transform: capitalize;
-}
-
 .intro {
   background: no-repeat center/100% url('graphics/header-shapes-mobile.png');
+  background-color: white;
+  border-bottom-left-radius: 80px;
 }
 
 .flex-container {
@@ -101,3 +112,47 @@ h1 + p::first-letter {
   justify-content: space-between;
   align-items: center;
 }
+
+/* Portfolio Styles
+************************** */
+
+h3 {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+h4 {
+  color: #7a869a;
+}
+
+h4 span {
+  color: #344563;
+}
+
+.card p {
+  color: #344563;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.card li {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6070FF;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 15px 0 0;
+}
+
+.card button {
+  color: #396DF2;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+
