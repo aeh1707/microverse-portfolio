@@ -188,4 +188,9 @@ h4 span {
   padding: 8px 8px;
 }
 
-
+.portfolio {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 100px;
+  margin: 100px 0;
+}
