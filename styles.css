@@ -25,6 +25,7 @@ body {
 .name,
 .glad,
 h1 + p::first-letter,
+h2,
 h3,
 h4,
 h4 + p::first-letter,
@@ -159,7 +160,8 @@ h4 span {
   line-height: 24px;
 }
 
-.card ul {
+.card ul,
+.about ul  {
   padding: 0;
 }
 
@@ -176,7 +178,7 @@ h4 span {
   padding: 5px 10px;
 }
 
-.card button {
+button {
   color: #396DF2;
   background-color: white;
   border: 1px solid #6070ff;
@@ -193,4 +195,25 @@ h4 span {
   grid-template-rows: auto auto auto auto;
   row-gap: 100px;
   margin: 100px 0;
+}
+
+/* About Styles
+************************** */
+.about {
+  background: white;
+  border-top-right-radius: 80px;
+}
+
+.about h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about li {
+  display: inline-block;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
