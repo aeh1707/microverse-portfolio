@@ -168,7 +168,8 @@ h4 span {
   font-size: 12px;
   line-height: 16px;
   color: #6070ff;
-  display: inline-block;
+  display: float;
+  float: left;
   list-style-type: none;
   margin: 0 15px 0 0;
   background-color: #ebebff;
