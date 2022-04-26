@@ -138,7 +138,7 @@
                 <li><img src="graphics/css.svg" alt="">&nbsp;&nbsp;&nbsp;<span>CSS</span></li>
             </ul>
             <h3><span>frameworks</span><img src="graphics/arr-right.svg" alt=""></h3>
-            <h3><span>skills</span><img src="graphics/arr-right.svg" alt=""></h3>
+            <h3 class="skills"><span>skills</span><img src="graphics/arr-right.svg" alt=""></h3>
         </div>
     </section>
     <section class="contact">
@@ -147,13 +147,13 @@
             <p>If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I’d
             love to help with it </p>
-            <form action="/my-handling-form-page" method="post">
+            <form action="https://formspree.io/f/mwkywlgp" method="post">
                 <input type="text" id="name" name="user_name"
-                placeholder="John Doe">
+                placeholder="John Doe" maxlength="30" required>
                 <input type="email" id="mail" name="user_email"
-                placeholder="john.doe@example.com">
+                placeholder="john.doe@example.com" required>
                 <textarea id="msg" name="user_message"
-                placeholder="Write your message here"></textarea>
+                placeholder="Write your message here" maxlength="500" required></textarea>
                 <button type="submit">Get in touch</button>
             </form>
         </div>
