@@ -377,26 +377,7 @@ textarea {
     border-bottom-left-radius: 80px;
   }
 
-  .burger {
-    display: none;
-  }
-
-  nav ul {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    display: inline-block;
-    padding-left: 0;
-    width: 289px;
-  }
-
-  nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    float: left;
-    margin-left: 40px;
-    color: #344563;
-  }
+  
 
   /* ABOUT */
 
@@ -424,6 +405,32 @@ textarea {
     align-self: center;
   }
 }
+
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  nav ul {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: inline-block;
+    padding-left: 0;
+    width: 289px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    float: left;
+    margin-left: 40px;
+    color: #344563;
+  }
+} 
+
 
 /* PORTFOLIO */
 
