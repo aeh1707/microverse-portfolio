@@ -13,7 +13,7 @@ html {
 
 body {
   background-color: #ebebff;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -48,9 +48,8 @@ header {
   text-decoration: none;
 }
 
-.burger {
-  width: 40px;
-  height: 40px;
+nav ul {
+  display: none;
 }
 
 h1,
@@ -92,7 +91,7 @@ h1 + p {
 }
 
 .intro {
-  background: no-repeat center/100% url('graphics/header-shapes-mobile.png');
+  background: no-repeat center/100% url('graphics/header-shapes-mobile.svg');
   background-color: white;
   border-bottom-left-radius: 80px;
 }
@@ -102,7 +101,7 @@ h1 + p {
   flex-direction: column;
   justify-content: center;
   width: 86%;
-  min-height: 160vw;
+  min-height: 588px;
   margin: 0 auto;
 }
 
@@ -130,7 +129,13 @@ h1 + p {
   flex-direction: column;
 }
 
-.card img {
+.card-content {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card > img {
   border-radius: 16px;
 }
 
@@ -168,10 +173,9 @@ h4 span {
   font-size: 12px;
   line-height: 16px;
   color: #6070ff;
-  display: float;
   float: left;
   list-style-type: none;
-  margin: 0 15px 0 0;
+  margin: 0 15px 15px 0;
   background-color: #ebebff;
   border-radius: 8px;
   padding: 5px 10px;
@@ -208,8 +212,25 @@ button:active {
 .portfolio {
   display: grid;
   grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   row-gap: 100px;
   margin: 100px 0;
+}
+
+.card-1 {
+  grid-area: 1 / 2 / 2 / 6;
+}
+
+.card-2 {
+  grid-area: 2 / 2 / 3 / 6;
+}
+
+.card-3 {
+  grid-area: 3 / 2 / 4 / 6;
+}
+
+.card-4 {
+  grid-area: 4 / 2 / 5 / 6;
 }
 
 /* About Styles
@@ -307,7 +328,8 @@ button:active {
 
 .contact p {
   margin: 0;
-  width: 84%;
+  max-width: 480px;
+  padding: 0 30px;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -330,6 +352,163 @@ textarea {
   padding: 10px;
 }
 
+form > * {
+  margin-bottom: 10px;
+}
+
 textarea {
   height: 9rem;
+}
+
+@media (min-width: 500px) {
+  /* HOME */
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 86%;
+    min-height: 100vh;
+    margin: 0 auto;
+  }
+
+  .intro {
+    background: no-repeat center/96% url('graphics/header-bg.svg');
+    background-color: white;
+    border-bottom-left-radius: 80px;
+  }
+
+  /* ABOUT */
+
+  .contact-container {
+    background: no-repeat center/80% url('graphics/contact-form-background-desktop.svg');
+    background-color: #6070ff;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .about-me {
+    width: 40%;
+  }
+
+  .tooling {
+    width: 50%;
+    margin-top: 100px;
+  }
+
+  .contact button {
+    align-self: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  nav ul {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: inline-block;
+    padding-left: 0;
+    width: 289px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    float: left;
+    margin-left: 40px;
+    color: #344563;
+  }
+}
+
+/* PORTFOLIO */
+
+@media (max-width: 819px) and (min-width: 638px) {
+  .card-1 {
+    grid-area: 2/2/3/4;
+  }
+
+  .card-2 {
+    grid-area: 2/4/3/6;
+  }
+
+  .card-3 {
+    grid-area: 3/2/4/4;
+  }
+
+  .card-4 {
+    grid-area: 3/4/4/6;
+  }
+}
+
+@media (min-width: 820px) {
+  .card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-container > img {
+    min-width: 50%;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+  }
+
+  .card-content p {
+    margin: 8px 0;
+  }
+
+  .card-content ul {
+    margin: 0 0 22px;
+  }
+
+  .card-2 .card-container {
+    flex-direction: row-reverse;
+  }
+
+  .card-4 .card-container {
+    flex-direction: row-reverse;
+  }
+
+  .card-2 .card-content,
+  .card-4 .card-content {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 900px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 62%;
+    min-height: 722px;
+    margin: 0 auto;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar {
+    width: 78%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+  }
 }
