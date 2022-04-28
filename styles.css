@@ -361,9 +361,7 @@ textarea {
 }
 
 @media (min-width: 500px) {
-  
   /* HOME */
-
   .flex-container {
     display: flex;
     flex-direction: column;
@@ -431,24 +429,23 @@ textarea {
 
 @media (max-width: 819px) and (min-width: 638px) {
   .card-1 {
-    grid-area: 2 / 2 / 3 / 4;
+    grid-area: 2/2/3/4;
   }
-  
+
   .card-2 {
-    grid-area: 2 / 4 / 3 / 6;
+    grid-area: 2/4/3/6;
   }
-  
+
   .card-3 {
-    grid-area: 3 / 2 / 4 / 4;
+    grid-area: 3/2/4/4;
   }
-  
+
   .card-4 {
-    grid-area: 3 / 4 / 4 / 6;
+    grid-area: 3/4/4/6;
   }
 }
 
 @media (min-width: 820px) {
-   
   .card-container {
     width: 100%;
     display: flex;
@@ -485,7 +482,6 @@ textarea {
   .card-4 .card-content {
     margin-right: 10px;
   }
-
 }
 
 @media (min-width: 900px) {
