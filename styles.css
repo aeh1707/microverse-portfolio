@@ -54,6 +54,16 @@ nav ul {
   display: none;
 }
 
+.navbar li {
+  transition: border-bottom 500ms;
+  -webkit-transition: border-bottom 500ms;
+}
+
+.navbar li:hover {
+  cursor: pointer;
+  border-bottom: 1px solid orangered;
+}
+
 h1,
 h2 {
   font-size: 2.5rem;
