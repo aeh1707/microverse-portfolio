@@ -59,11 +59,6 @@ nav ul {
   -webkit-transition: border-bottom 500ms;
 }
 
-.navbar li:hover {
-  cursor: pointer;
-  border-bottom: 1px solid orangered;
-}
-
 h1,
 h2 {
   font-size: 2.5rem;
@@ -289,6 +284,11 @@ button:active {
   border-radius: 8px;
   margin-bottom: 10px;
   padding: 10px;
+}
+
+.navbar li:hover {
+  cursor: pointer;
+  border-bottom: 1px solid orangered;
 }
 
 .about h3 {
