@@ -46,10 +46,17 @@ header {
   line-height: 20px;
   color: #6070ff;
   text-decoration: none;
+  transform: rotate(360deg);
+  transition: all 500ms ease-in-out 0.5s;
 }
 
 nav ul {
   display: none;
+}
+
+.navbar li {
+  transition: border-bottom 500ms;
+  -webkit-transition: border-bottom 500ms;
 }
 
 h1,
@@ -201,6 +208,7 @@ button:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: white;
+  transition: all 1s ease-out 0.5s;
 }
 
 button:active {
@@ -276,6 +284,11 @@ button:active {
   border-radius: 8px;
   margin-bottom: 10px;
   padding: 10px;
+}
+
+.navbar li:hover {
+  cursor: pointer;
+  border-bottom: 1px solid orangered;
 }
 
 .about h3 {
