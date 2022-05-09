@@ -373,6 +373,10 @@ textarea {
   height: 9rem;
 }
 
+.x {
+  display: none;
+}
+
 @media (min-width: 500px) {
   /* HOME */
   .flex-container {
@@ -425,12 +429,14 @@ textarea {
 }
 
 .mobile-view {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   left: 0;
   top: 0;
   background: white;
   list-style: none;
+  margin: 0;
   width: 100vh;
   height: 100vh;
   background: hsla(234, 100%, 69%, 0.945);
@@ -449,6 +455,14 @@ textarea {
 
 .logo-none {
   display: none;
+}
+
+.x-appear {
+  display: inline-block;
+  text-align: right;
+  width: 60px;
+  align-self: center;
+  margin: 50px 0 0 100px;
 }
 
 @media (min-width: 769px) {
