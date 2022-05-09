@@ -423,6 +423,11 @@ textarea {
   }
 }
 
+.mobile-view {
+  display: inline-block;
+  background: white;
+}
+
 @media (min-width: 769px) {
   nav ul {
     font-weight: 500;
