@@ -431,6 +431,7 @@ textarea {
 .mobile-view {
   display: flex;
   flex-direction: column;
+  gap: 40px;
   position: absolute;
   left: 0;
   top: 0;
@@ -439,7 +440,7 @@ textarea {
   margin: 0;
   width: 100vh;
   height: 100vh;
-  background: hsla(234, 100%, 69%, 0.945);
+  background: hsla(234, 100%, 69%, 0.767);
   z-index: 1;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -447,6 +448,7 @@ textarea {
   font-size: 32px;
   line-height: 44px;
   color: white;
+  backdrop-filter: blur(5px);
 }
 
 .burger-none {
