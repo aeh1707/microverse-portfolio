@@ -5,7 +5,7 @@ const x = document.querySelector('.x');
 const links = document.querySelectorAll('nav ul li');
 
 for (let i = 0; i < links.length; i++) {
-  links[i].addEventListener('click', function (e) {
+  links[i].addEventListener('click', function() {
     menu.classList.remove('mobile-view');
     burger.classList.remove('burger-none');
     logo.classList.remove('logo-none');
@@ -13,14 +13,14 @@ for (let i = 0; i < links.length; i++) {
   });
 }
 
-burger.addEventListener('click', function (e) {
+burger.addEventListener('click', function() {
   menu.classList.add('mobile-view');
   burger.classList.add('burger-none');
   logo.classList.add('logo-none');
   x.classList.add('x-appear');
 });
 
-x.addEventListener('click', function (e) {
+x.addEventListener('click', function () {
   menu.classList.remove('mobile-view');
   burger.classList.remove('burger-none');
   logo.classList.remove('logo-none');
