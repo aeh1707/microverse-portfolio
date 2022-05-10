@@ -31,7 +31,9 @@ npx stylelint "**/*.{css,scss}" npx hint ./index.html
 
 1. Open index.html located at the route folder of the project
 
+### Live Verion
 
+You find my project live at: <https://aeh1707.github.io/microverse-portfolio>
 
 ## Author
 
