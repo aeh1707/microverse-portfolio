@@ -4,7 +4,7 @@ const logo = document.querySelector('.logo');
 const x = document.querySelector('.x');
 const links = document.querySelectorAll('nav ul li');
 
-for (let i = 0; i < links.length; i += 1 ) {
+for (let i = 0; i < links.length; i += 1) {
   links[i].addEventListener('click', () => {
     menu.classList.remove('mobile-view');
     burger.classList.remove('burger-none');
