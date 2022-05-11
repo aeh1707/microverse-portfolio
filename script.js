@@ -38,3 +38,20 @@ project1 = {
   technologies: ['html', 'css', 'javascript'],
   links: ['#', '#']
 }
+
+const portfolioSection = document.querySelector('#portfolio')
+const cardOneArticle = document.createElement('article');
+cardOneArticle.classList.add('card');
+cardOneArticle.classList.add('card-1');
+portfolioSection.appendChild(cardOneArticle);
+const cardOneDiv = document.createElement('div');
+cardOneDiv.classList.add('card-container');
+cardOneArticle.appendChild(cardOneDiv);
+const cardOneimg = document.createElement('img');
+cardOneimg.src = project1.img;
+cardOneimg.alt = project1.alt;
+
+
+
+const cardOne = document.createElement('h3');
+cardOne.textContent = project2.name;
