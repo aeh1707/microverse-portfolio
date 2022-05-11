@@ -26,3 +26,15 @@ x.addEventListener('click', () => {
   logo.classList.remove('logo-none');
   x.classList.remove('x-appear');
 });
+
+project1 = {
+  title: 'tonic',
+  subTitleElementOne: 'conopy',
+  subTitleElementOne: 'back end dev',
+  subTitleElementOne: '2015', 
+  description: 'a daily selection of privately personalized reads; no accounts or sign-ups required.',
+  img: 'graphics/snapshoot-portfolio-1.svg',
+  imgAlt: 'tonic project preview',
+  technologies: ['html', 'css', 'javascript'],
+  links: ['#', '#']
+}
