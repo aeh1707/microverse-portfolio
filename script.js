@@ -30,8 +30,8 @@ x.addEventListener('click', () => {
 project1 = {
   title: 'tonic',
   subTitleElementOne: 'conopy',
-  subTitleElementOne: 'back end dev',
-  subTitleElementOne: '2015', 
+  subTitleElementTwo: 'back end dev',
+  subTitleElementThree: '2015', 
   description: 'a daily selection of privately personalized reads; no accounts or sign-ups required.',
   img: 'graphics/snapshoot-portfolio-1.svg',
   imgAlt: 'tonic project preview',
@@ -39,19 +39,11 @@ project1 = {
   links: ['#', '#']
 }
 
-const portfolioSection = document.querySelector('#portfolio')
-const cardOneArticle = document.createElement('article');
-cardOneArticle.classList.add('card');
-cardOneArticle.classList.add('card-1');
-portfolioSection.appendChild(cardOneArticle);
-const cardOneDiv = document.createElement('div');
-cardOneDiv.classList.add('card-container');
-cardOneArticle.appendChild(cardOneDiv);
-const cardOneimg = document.createElement('img');
-cardOneimg.src = project1.img;
-cardOneimg.alt = project1.alt;
-
-
-
-const cardOne = document.createElement('h3');
-cardOne.textContent = project2.name;
+document.querySelector('.card-1 h3').textContent = project1.title;
+document.querySelector('.subTitleElementOne').textContent = project1.subTitleElementOne;
+document.querySelector('.subTitleElementTwo').textContent = project1.subTitleElementTwo;
+document.querySelector('.subTitleElementThree').textContent = project1.subTitleElementThree;
+document.querySelector('.card-1 p').textContent = project1.description;
+document.querySelector('.card-1 ul li:nth-child(1)').textContent = project1.technologies[0];
+document.querySelector('.card-1 ul li:nth-child(2)').textContent = project1.technologies[1];
+document.querySelector('.card-1 ul li:nth-child(3)').textContent = project1.technologies[2];
