@@ -125,3 +125,101 @@ xPopTwo.addEventListener('click', () => {
   popupTwo.classList.remove('show');
   mainContent.classList.remove('blur');
 });
+
+const project3 = {
+  title: 'tonic',
+  subTitleElementOne: 'conopy',
+  subTitleElementTwo: 'back end dev',
+  subTitleElementThree: '2015',
+  description: 'a daily selection of privately personalized reads; no accounts or sign-ups required.',
+  imgSrc: 'graphics/snapshoot-portfolio-1.svg',
+  imgAlt: 'tonic project preview',
+  technologies: ['html', 'css', 'javascript'],
+  links: ['#', '#'],
+};
+
+document.querySelector('.card-3 h3').textContent = project3.title;
+document.querySelector('.card-3 .subTitleElementOne').textContent = project3.subTitleElementOne;
+document.querySelector('.card-3 .subTitleElementTwo').textContent = project3.subTitleElementTwo;
+document.querySelector('.card-3 .subTitleElementThree').textContent = project3.subTitleElementThree;
+document.querySelector('.card-3 img').src = project3.imgSrc;
+document.querySelector('.card-3 img').alt = project3.imgAlt;
+document.querySelector('.card-3 p').textContent = project3.description;
+[document.querySelector('.card-3 ul li:nth-child(1)').textContent] = project3.technologies;
+[, document.querySelector('.card-3 ul li:nth-child(2)').textContent] = project3.technologies;
+[,, document.querySelector('.card-3 ul li:nth-child(3)').textContent] = project3.technologies;
+
+document.querySelector('.card-3.popup h3').textContent = project3.title;
+document.querySelector('.card-3.popup .subTitleElementOne').textContent = project3.subTitleElementOne;
+document.querySelector('.card-3.popup .subTitleElementTwo').textContent = project3.subTitleElementTwo;
+document.querySelector('.card-3.popup .subTitleElementThree').textContent = project3.subTitleElementThree;
+document.querySelector('.card-3.popup h4 + img').src = project3.imgSrc;
+document.querySelector('.card-3.popup h4 + img').alt = project3.imgAlt;
+document.querySelector('.card-3.popup p').textContent = project3.description;
+[document.querySelector('.card-3.popup ul li:nth-child(1)').textContent] = project3.technologies;
+[, document.querySelector('.card-3.popup ul li:nth-child(2)').textContent] = project3.technologies;
+[,, document.querySelector('.card-3.popup ul li:nth-child(3)').textContent] = project3.technologies;
+
+const seeProjectThree = document.querySelector('.card-3 button');
+const popupThree = document.querySelector('.popup.card-3');
+const xPopThree = document.querySelector('.xPopThree');
+
+seeProjectThree.addEventListener('click', () => {
+  popupThree.classList.add('show');
+  mainContent.classList.add('blur');
+  document.documentElement.scrollTop = 0;
+});
+
+xPopThree.addEventListener('click', () => {
+  popupThree.classList.remove('show');
+  mainContent.classList.remove('blur');
+});
+
+const project4 = {
+  title: 'tonic',
+  subTitleElementOne: 'conopy',
+  subTitleElementTwo: 'back end dev',
+  subTitleElementThree: '2015',
+  description: 'a daily selection of privately personalized reads; no accounts or sign-ups required.',
+  imgSrc: 'graphics/snapshoot-portfolio-1.svg',
+  imgAlt: 'tonic project preview',
+  technologies: ['html', 'css', 'javascript'],
+  links: ['#', '#'],
+};
+
+document.querySelector('.card-4 h3').textContent = project4.title;
+document.querySelector('.card-4 .subTitleElementOne').textContent = project4.subTitleElementOne;
+document.querySelector('.card-4 .subTitleElementTwo').textContent = project4.subTitleElementTwo;
+document.querySelector('.card-4 .subTitleElementThree').textContent = project4.subTitleElementThree;
+document.querySelector('.card-4 img').src = project4.imgSrc;
+document.querySelector('.card-4 img').alt = project4.imgAlt;
+document.querySelector('.card-4 p').textContent = project4.description;
+[document.querySelector('.card-4 ul li:nth-child(1)').textContent] = project4.technologies;
+[, document.querySelector('.card-4 ul li:nth-child(2)').textContent] = project4.technologies;
+[,, document.querySelector('.card-4 ul li:nth-child(3)').textContent] = project4.technologies;
+
+document.querySelector('.card-4.popup h3').textContent = project4.title;
+document.querySelector('.card-4.popup .subTitleElementOne').textContent = project4.subTitleElementOne;
+document.querySelector('.card-4.popup .subTitleElementTwo').textContent = project4.subTitleElementTwo;
+document.querySelector('.card-4.popup .subTitleElementThree').textContent = project4.subTitleElementThree;
+document.querySelector('.card-4.popup h4 + img').src = project4.imgSrc;
+document.querySelector('.card-4.popup h4 + img').alt = project4.imgAlt;
+document.querySelector('.card-4.popup p').textContent = project4.description;
+[document.querySelector('.card-4.popup ul li:nth-child(1)').textContent] = project4.technologies;
+[, document.querySelector('.card-4.popup ul li:nth-child(2)').textContent] = project4.technologies;
+[,, document.querySelector('.card-4.popup ul li:nth-child(3)').textContent] = project4.technologies;
+
+const seeProjectFour = document.querySelector('.card-4 button');
+const popupFour = document.querySelector('.popup.card-4');
+const xPopFour = document.querySelector('.xPopFour');
+
+seeProjectFour.addEventListener('click', () => {
+  popupFour.classList.add('show');
+  mainContent.classList.add('blur');
+  document.documentElement.scrollTop = 0;
+});
+
+xPopFour.addEventListener('click', () => {
+  popupFour.classList.remove('show');
+  mainContent.classList.remove('blur');
+});
