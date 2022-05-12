@@ -61,17 +61,65 @@ document.querySelector('.card-1.popup ul li:nth-child(1)').textContent = project
 document.querySelector('.card-1.popup ul li:nth-child(2)').textContent = project1.technologies[1];
 document.querySelector('.card-1.popup ul li:nth-child(3)').textContent = project1.technologies[2];
 
-const seeProject = document.querySelector('.card-1 button');
+const seeProjectOne = document.querySelector('.card-1 button');
 const popupOne = document.querySelector('.popup.card-1');
 const mainContent = document.querySelector('.main-content');
-const xPop = document.querySelector('.x-pop');
+const xPopOne = document.querySelector('.xPopOne');
 
-seeProject.addEventListener('click', () => {
+seeProjectOne.addEventListener('click', () => {
   popupOne.classList.add('show');
   mainContent.classList.add('blur');
 });
 
-xPop.addEventListener('click', () => {
+xPopOne.addEventListener('click', () => {
   popupOne.classList.remove('show');
+  mainContent.classList.remove('blur');
+});
+
+const project2 = {
+  title: 'tonic',
+  subTitleElementOne: 'conopy',
+  subTitleElementTwo: 'back end dev',
+  subTitleElementThree: '2015',
+  description: 'a daily selection of privately personalized reads; no accounts or sign-ups required.',
+  imgSrc: 'graphics/snapshoot-portfolio-1.svg',
+  imgAlt: 'tonic project preview',
+  technologies: ['html', 'css', 'javascript'],
+  links: ['#', '#'],
+};
+
+document.querySelector('.card-2 h3').textContent = project2.title;
+document.querySelector('.card-2 .subTitleElementOne').textContent = project2.subTitleElementOne;
+document.querySelector('.card-2 .subTitleElementTwo').textContent = project2.subTitleElementTwo;
+document.querySelector('.card-2 .subTitleElementThree').textContent = project2.subTitleElementThree;
+document.querySelector('.card-2 img').src = project2.imgSrc;
+document.querySelector('.card-2 img').alt = project2.imgAlt;
+document.querySelector('.card-2 p').textContent = project2.description;
+document.querySelector('.card-2 ul li:nth-child(1)').textContent = project2.technologies[0];
+document.querySelector('.card-2 ul li:nth-child(2)').textContent = project2.technologies[1];
+document.querySelector('.card-2 ul li:nth-child(3)').textContent = project2.technologies[2];
+
+document.querySelector('.card-2.popup h3').textContent = project2.title;
+document.querySelector('.card-2.popup .subTitleElementOne').textContent = project2.subTitleElementOne;
+document.querySelector('.card-2.popup .subTitleElementTwo').textContent = project2.subTitleElementTwo;
+document.querySelector('.card-2.popup .subTitleElementThree').textContent = project2.subTitleElementThree;
+document.querySelector('.card-2.popup h4 + img').src = project2.imgSrc;
+document.querySelector('.card-2.popup h4 + img').alt = project2.imgAlt;
+document.querySelector('.card-2.popup p').textContent = project2.description;
+document.querySelector('.card-2.popup ul li:nth-child(1)').textContent = project2.technologies[0];
+document.querySelector('.card-2.popup ul li:nth-child(2)').textContent = project2.technologies[1];
+document.querySelector('.card-2.popup ul li:nth-child(3)').textContent = project2.technologies[2];
+
+const seeProjectTwo = document.querySelector('.card-2 button');
+const popupTwo = document.querySelector('.popup.card-2');
+const xPopTwo = document.querySelector('.xPopTwo');
+
+seeProjectTwo.addEventListener('click', () => {
+  popupTwo.classList.add('show');
+  mainContent.classList.add('blur');
+});
+
+xPopTwo.addEventListener('click', () => {
+  popupTwo.classList.remove('show');
   mainContent.classList.remove('blur');
 });
