@@ -40,10 +40,35 @@ project1 = {
 }
 
 document.querySelector('.card-1 h3').textContent = project1.title;
-document.querySelector('.subTitleElementOne').textContent = project1.subTitleElementOne;
-document.querySelector('.subTitleElementTwo').textContent = project1.subTitleElementTwo;
-document.querySelector('.subTitleElementThree').textContent = project1.subTitleElementThree;
+document.querySelector('.card-1 .subTitleElementOne').textContent = project1.subTitleElementOne;
+document.querySelector('.card-1 .subTitleElementTwo').textContent = project1.subTitleElementTwo;
+document.querySelector('.card-1 .subTitleElementThree').textContent = project1.subTitleElementThree;
 document.querySelector('.card-1 p').textContent = project1.description;
 document.querySelector('.card-1 ul li:nth-child(1)').textContent = project1.technologies[0];
 document.querySelector('.card-1 ul li:nth-child(2)').textContent = project1.technologies[1];
 document.querySelector('.card-1 ul li:nth-child(3)').textContent = project1.technologies[2];
+
+
+document.querySelector('.card-1.popup h3').textContent = project1.title;
+document.querySelector('.card-1.popup .subTitleElementOne').textContent = project1.subTitleElementOne;
+document.querySelector('.card-1.popup .subTitleElementTwo').textContent = project1.subTitleElementTwo;
+document.querySelector('.card-1.popup .subTitleElementThree').textContent = project1.subTitleElementThree;
+document.querySelector('.card-1.popup p').textContent = project1.description;
+document.querySelector('.card-1.popup ul li:nth-child(1)').textContent = project1.technologies[0];
+document.querySelector('.card-1.popup ul li:nth-child(2)').textContent = project1.technologies[1];
+document.querySelector('.card-1.popup ul li:nth-child(3)').textContent = project1.technologies[2];
+
+const seeProject = document.querySelector('.card-1 button');
+const popupOne = document.querySelector('.popup.card-1');
+const mainContent = document.querySelector('.main-content');
+const xPop = document.querySelector('.x-pop');
+
+seeProject.addEventListener('click', () => {
+  popupOne.classList.add('show');
+  mainContent.classList.add('blur');
+})
+
+xPop.addEventListener('click', () => {
+  popupOne.classList.remove('show');
+  mainContent.classList.remove('blur');
+})
