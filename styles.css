@@ -21,6 +21,10 @@ body {
   line-height: 28px;
 }
 
+.blur {
+  filter: blur(4px);
+}
+
 .navbar,
 .name,
 .glad,
@@ -136,6 +140,12 @@ h1 + p {
   flex-direction: column;
 }
 
+.pop-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
 .card-content {
   margin: 0;
   display: flex;
@@ -159,7 +169,7 @@ h4 {
   margin: 0;
 }
 
-h4 span {
+h4 span:nth-child(1) {
   color: #344563;
 }
 
@@ -239,6 +249,41 @@ button:active {
 
 .card-4 {
   grid-area: 4 / 2 / 5 / 6;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  right: 5%;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup h3 + img {
+  width: 60px;
+}
+
+.popup h4 {
+  margin-bottom: 12px;
+}
+
+.popup-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-buttons button {
+  width: 48%;
 }
 
 /* About Styles
@@ -425,6 +470,55 @@ textarea {
   .burger {
     display: none;
   }
+
+  .popup .pop-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .popup {
+    width: 80%;
+    top: 8%;
+    left: 10%;
+    right: 10%;
+  }
+
+  .popup h3 + img {
+    width: 60px;
+  }
+
+  .popup-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popup-footer {
+    width: 45%;
+  }
+
+  .pop-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pop-buttons button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 1018px) {
+  .pop-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pop-buttons button {
+    width: 48%;
+    margin-bottom: 0;
+  }
 }
 
 .mobile-view {
@@ -575,4 +669,9 @@ nav ul li a {
     align-items: center;
     position: sticky;
   }
+}
+
+.show {
+  display: block;
+  z-index: 5;
 }
