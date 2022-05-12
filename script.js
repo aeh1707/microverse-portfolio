@@ -46,9 +46,9 @@ document.querySelector('.card-1 .subTitleElementThree').textContent = project1.s
 document.querySelector('.card-1 img').src = project1.imgSrc;
 document.querySelector('.card-1 img').alt = project1.imgAlt;
 document.querySelector('.card-1 p').textContent = project1.description;
-document.querySelector('.card-1 ul li:nth-child(1)').textContent = project1.technologies[0];
-document.querySelector('.card-1 ul li:nth-child(2)').textContent = project1.technologies[1];
-document.querySelector('.card-1 ul li:nth-child(3)').textContent = project1.technologies[2];
+[document.querySelector('.card-1 ul li:nth-child(1)').textContent] = project1.technologies;
+[, document.querySelector('.card-1 ul li:nth-child(2)').textContent] = project1.technologies;
+[,, document.querySelector('.card-1 ul li:nth-child(3)').textContent] = project1.technologies;
 
 document.querySelector('.card-1.popup h3').textContent = project1.title;
 document.querySelector('.card-1.popup .subTitleElementOne').textContent = project1.subTitleElementOne;
@@ -57,9 +57,9 @@ document.querySelector('.card-1.popup .subTitleElementThree').textContent = proj
 document.querySelector('.card-1.popup h4 + img').src = project1.imgSrc;
 document.querySelector('.card-1.popup h4 + img').alt = project1.imgAlt;
 document.querySelector('.card-1.popup p').textContent = project1.description;
-document.querySelector('.card-1.popup ul li:nth-child(1)').textContent = project1.technologies[0];
-document.querySelector('.card-1.popup ul li:nth-child(2)').textContent = project1.technologies[1];
-document.querySelector('.card-1.popup ul li:nth-child(3)').textContent = project1.technologies[2];
+[document.querySelector('.card-1.popup ul li:nth-child(1)').textContent] = project1.technologies;
+[, document.querySelector('.card-1.popup ul li:nth-child(2)').textContent] = project1.technologies;
+[,, document.querySelector('.card-1.popup ul li:nth-child(3)').textContent] = project1.technologies;
 
 const seeProjectOne = document.querySelector('.card-1 button');
 const popupOne = document.querySelector('.popup.card-1');
@@ -69,6 +69,7 @@ const xPopOne = document.querySelector('.xPopOne');
 seeProjectOne.addEventListener('click', () => {
   popupOne.classList.add('show');
   mainContent.classList.add('blur');
+  document.documentElement.scrollTop = 0;
 });
 
 xPopOne.addEventListener('click', () => {
@@ -95,9 +96,9 @@ document.querySelector('.card-2 .subTitleElementThree').textContent = project2.s
 document.querySelector('.card-2 img').src = project2.imgSrc;
 document.querySelector('.card-2 img').alt = project2.imgAlt;
 document.querySelector('.card-2 p').textContent = project2.description;
-document.querySelector('.card-2 ul li:nth-child(1)').textContent = project2.technologies[0];
-document.querySelector('.card-2 ul li:nth-child(2)').textContent = project2.technologies[1];
-document.querySelector('.card-2 ul li:nth-child(3)').textContent = project2.technologies[2];
+[document.querySelector('.card-2 ul li:nth-child(1)').textContent] = project2.technologies;
+[, document.querySelector('.card-2 ul li:nth-child(2)').textContent] = project2.technologies;
+[,, document.querySelector('.card-2 ul li:nth-child(3)').textContent] = project2.technologies;
 
 document.querySelector('.card-2.popup h3').textContent = project2.title;
 document.querySelector('.card-2.popup .subTitleElementOne').textContent = project2.subTitleElementOne;
@@ -106,9 +107,9 @@ document.querySelector('.card-2.popup .subTitleElementThree').textContent = proj
 document.querySelector('.card-2.popup h4 + img').src = project2.imgSrc;
 document.querySelector('.card-2.popup h4 + img').alt = project2.imgAlt;
 document.querySelector('.card-2.popup p').textContent = project2.description;
-document.querySelector('.card-2.popup ul li:nth-child(1)').textContent = project2.technologies[0];
-document.querySelector('.card-2.popup ul li:nth-child(2)').textContent = project2.technologies[1];
-document.querySelector('.card-2.popup ul li:nth-child(3)').textContent = project2.technologies[2];
+[document.querySelector('.card-2.popup ul li:nth-child(1)').textContent] = project2.technologies;
+[, document.querySelector('.card-2.popup ul li:nth-child(2)').textContent] = project2.technologies;
+[,, document.querySelector('.card-2.popup ul li:nth-child(3)').textContent] = project2.technologies;
 
 const seeProjectTwo = document.querySelector('.card-2 button');
 const popupTwo = document.querySelector('.popup.card-2');
@@ -117,6 +118,7 @@ const xPopTwo = document.querySelector('.xPopTwo');
 seeProjectTwo.addEventListener('click', () => {
   popupTwo.classList.add('show');
   mainContent.classList.add('blur');
+  document.documentElement.scrollTop = 0;
 });
 
 xPopTwo.addEventListener('click', () => {

@@ -140,6 +140,12 @@ h1 + p {
   flex-direction: column;
 }
 
+.pop-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
 .card-content {
   margin: 0;
   display: flex;
