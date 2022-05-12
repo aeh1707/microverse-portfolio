@@ -25,8 +25,6 @@ body {
   filter: blur(4px);
 }
 
-
-
 .navbar,
 .name,
 .glad,
@@ -275,7 +273,7 @@ button:active {
 
 .pop-buttons {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .pop-buttons button {
@@ -473,49 +471,47 @@ textarea {
   }
 
   .popup {
-  width: 80%;
-  top: 8%;
-  left: 10%;
-  right: 10%;
-}
+    width: 80%;
+    top: 8%;
+    left: 10%;
+    right: 10%;
+  }
 
-.popup h3 + img {
-  width: 60px;
-}
+  .popup h3 + img {
+    width: 60px;
+  }
 
-.popup-content {
-  display: flex;
-  justify-content: space-between;
-}
+  .popup-content {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.popup-footer {
-  width: 45%;
-}
+  .popup-footer {
+    width: 45%;
+  }
 
-.pop-buttons {
-  display: flex;
-  flex-direction: column;
-}
+  .pop-buttons {
+    display: flex;
+    flex-direction: column;
+  }
 
-.pop-buttons button {
-  width: 100%;
-  margin-bottom: 8px;
-}
-
+  .pop-buttons button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
 }
 
 @media (min-width: 1018px) {
   .pop-buttons {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
   }
 
   .pop-buttons button {
     width: 48%;
     margin-bottom: 0;
   }
-  
 }
 
 .mobile-view {
