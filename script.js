@@ -33,7 +33,7 @@ const project1 = {
   subTitleElementTwo: 'back end dev',
   subTitleElementThree: '2015',
   description: 'a daily selection of privately personalized reads; no accounts or sign-ups required.',
-  img: 'graphics/snapshoot-portfolio-1.svg',
+  imgSrc: 'graphics/snapshoot-portfolio-1.svg',
   imgAlt: 'tonic project preview',
   technologies: ['html', 'css', 'javascript'],
   links: ['#', '#'],
@@ -43,6 +43,8 @@ document.querySelector('.card-1 h3').textContent = project1.title;
 document.querySelector('.card-1 .subTitleElementOne').textContent = project1.subTitleElementOne;
 document.querySelector('.card-1 .subTitleElementTwo').textContent = project1.subTitleElementTwo;
 document.querySelector('.card-1 .subTitleElementThree').textContent = project1.subTitleElementThree;
+document.querySelector('.card-1 img').src = project1.imgSrc;
+document.querySelector('.card-1 img').alt = project1.imgAlt;
 document.querySelector('.card-1 p').textContent = project1.description;
 document.querySelector('.card-1 ul li:nth-child(1)').textContent = project1.technologies[0];
 document.querySelector('.card-1 ul li:nth-child(2)').textContent = project1.technologies[1];
@@ -52,6 +54,8 @@ document.querySelector('.card-1.popup h3').textContent = project1.title;
 document.querySelector('.card-1.popup .subTitleElementOne').textContent = project1.subTitleElementOne;
 document.querySelector('.card-1.popup .subTitleElementTwo').textContent = project1.subTitleElementTwo;
 document.querySelector('.card-1.popup .subTitleElementThree').textContent = project1.subTitleElementThree;
+document.querySelector('.card-1.popup h4 + img').src = project1.imgSrc;
+document.querySelector('.card-1.popup h4 + img').alt = project1.imgAlt;
 document.querySelector('.card-1.popup p').textContent = project1.description;
 document.querySelector('.card-1.popup ul li:nth-child(1)').textContent = project1.technologies[0];
 document.querySelector('.card-1.popup ul li:nth-child(2)').textContent = project1.technologies[1];
