@@ -255,7 +255,7 @@ function populateStorage() {
   const formInputs = {
     name: nameField,
     email: emailField,
-    msg: messageField
+    msg: messageField,
   };
   localStorage.setItem('formInputsObj', JSON.stringify(formInputs));
 }
