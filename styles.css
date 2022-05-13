@@ -422,6 +422,10 @@ textarea {
   display: none;
 }
 
+small {
+  color: red;
+}
+
 @media (min-width: 500px) {
   /* HOME */
   .flex-container {
