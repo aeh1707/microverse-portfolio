@@ -237,5 +237,9 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     errorMessageField.textContent = "Please, make your email lowercase.";
     email.style.border = "2px solid red";
+  } else {
+    errorMessageField.textContent = "";
+    email.style.border = "2px solid black";
+    email.submit();
   }
 })
