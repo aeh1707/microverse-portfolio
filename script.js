@@ -259,3 +259,15 @@ function populateStorage() {
   };
   localStorage.setItem('formInputsObj', JSON.stringify(formInputs));
 }
+
+const parsedFormInputs = JSON.parse(localStorage.getItem('formInputsObj'));
+
+if (parsedFormInputs) {
+  Fname.value = parsedFormInputs.name;
+  email.value = parsedFormInputs.email;
+  message.value = parsedFormInputs.msg;
+}
+
+form.addEventListener('input', () => {
+  populateStorage();
+});
