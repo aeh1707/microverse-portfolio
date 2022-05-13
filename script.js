@@ -223,3 +223,23 @@ xPopFour.addEventListener('click', () => {
   popupFour.classList.remove('show');
   mainContent.classList.remove('blur');
 });
+
+function isLower(str) {
+  return /[a-z]/.test(str) && !/[A-Z]/.test(str);
+}
+
+const form = document.querySelector('form');
+const email = document.querySelector('#mail');
+const errorMessageField = document.querySelector('small');
+
+form.addEventListener('submit', (e) => {
+  if (!isLower(email.value)) {
+    e.preventDefault();
+    errorMessageField.textContent = 'Please, make your email lowercase.';
+    email.style.border = '2px solid red';
+  } else {
+    errorMessageField.textContent = '';
+    email.style.border = '2px solid black';
+    email.submit();
+  }
+});
